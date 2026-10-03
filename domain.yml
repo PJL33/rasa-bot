@@ -1,0 +1,155 @@
+version: "3.1"
+
+responses:
+  utter_q01:
+    - text: "Bonjour 👋🏾 Bienvenue chez Pépite-Zone ✨ Comment pouvons-nous vous aider aujourd’hui ?"
+  utter_q02:
+    - text: "Nous proposons des soins pour le visage et le corps, notamment les gammes Glowelle et Melanight, ainsi que d’autres soins, parfums, accessoires et kits. Consultez la boutique en ligne pour les produits et prix actuels."
+  utter_q03:
+    - text: "Nos soins sont pensés pour les peaux noires et métissées. Certains conviennent à tous les types de peau; le choix dépend de votre objectif et de la sensibilité de votre peau."
+  utter_q04:
+    - text: "Indiquez votre objectif principal (taches, boutons, teint terne, irrégularité, sécheresse ou soin du corps), votre sensibilité et les produits déjà utilisés. Nous pourrons mieux vous orienter."
+  utter_q05:
+    - text: "Bien sûr. Écrivez votre nom, votre numéro de commande s’il y en a un et un résumé de votre demande. Un membre de l’équipe Pépite-Zone prendra le relais."
+  utter_q06:
+    - text: "Pépite-Zone dessert notamment le Canada, les États-Unis, Haïti et la France. Pour une autre destination, indiquez votre pays afin que l’équipe confirme la livraison."
+  utter_q07:
+    - text: "Le Kit Glowelle est une routine visage composée du savon visage, de la lotion Glowelle et de la crème hydratante visage Glowelle."
+  utter_q08:
+    - text: "Glowelle aide à raviver l’éclat, à améliorer l’apparence des taches et à rendre le teint plus uniforme. Les résultats varient selon la peau, la régularité et la protection solaire."
+  utter_q09:
+    - text: "La Gamme Glowelle complète réunit six soins : trois produits visage et trois produits corps, soit la routine visage ainsi que le savon, le lait et l’huile pour le corps."
+  utter_q10:
+    - text: "La gamme corporelle Glowelle comprend un savon, un lait et une huile pour le corps. Elle aide à nettoyer, nourrir et favoriser un aspect plus lumineux et uniforme."
+  utter_q11:
+    - text: "Le Kit Melanight est conçu pour les peaux foncées ou pour améliorer l’apparence des boutons et taches, uniformiser et illuminer le teint naturel, sans rechercher un effet éclaircissant."
+  utter_q12:
+    - text: "Glowelle vise surtout l’éclat et l’apparence des taches et du teint irrégulier. Melanight respecte la couleur naturelle du teint, sans objectif éclaircissant."
+  utter_q13:
+    - text: "Regardez le Kit Melanight, conçu pour uniformiser et illuminer le teint naturel sans objectif éclaircissant."
+  utter_q14:
+    - text: "Glowelle, Melanight ou la crème anti-taches peuvent être envisagés selon votre teint, votre sensibilité et votre routine. Pour une orientation plus précise, envoyez une photo nette, sans filtre, en lumière naturelle, et décrivez votre peau."
+  utter_q15:
+    - text: "La lotion Glowelle s’utilise le soir. Elle aide à raviver l’éclat et à améliorer progressivement l’apparence du teint irrégulier et des taches."
+  utter_q16:
+    - text: "La crème visage Glowelle hydrate la peau et complète la routine visage après le nettoyage et la lotion du soir."
+  utter_q17:
+    - text: "Non. Merci de ne pas le présenter comme un savon au curcuma. Consultez la fiche du produit ou envoyez une photo de l’étiquette pour la description et les ingrédients exacts."
+  utter_q18:
+    - text: "Oui, plusieurs produits sont disponibles séparément selon les stocks. Consultez la boutique pour les formats, prix et disponibilités du moment."
+  utter_q19:
+    - text: "Le site affiche actuellement le Kit Glowelle et le Kit Melanight à 75 CAD chacun. Le prix applicable est celui indiqué dans votre panier au moment de la commande."
+  utter_q20:
+    - text: "Le site affiche actuellement la lotion Glowelle à 50 CAD et la crème visage Glowelle à 20 CAD. Le prix applicable est celui indiqué dans votre panier."
+  utter_q21:
+    - text: "Le site affiche actuellement la gamme corporelle Glowelle à 105,50 CAD et la gamme complète à 155,10 CAD. Le prix applicable est celui indiqué dans votre panier."
+  utter_q22:
+    - text: "Le matin : nettoyez doucement avec le savon, appliquez la crème hydratante, puis une protection solaire SPF 50. N’utilisez pas la lotion Glowelle le matin."
+  utter_q23:
+    - text: "Le soir : nettoyez avec le savon, séchez sans frotter, appliquez la lotion Glowelle puis la crème hydratante. Évitez le contour des yeux et suivez l’étiquette."
+  utter_q24:
+    - text: "Non. La lotion Glowelle est réservée au soir. Le matin, hydratez votre peau et appliquez une protection solaire SPF 50."
+  utter_q25:
+    - text: "Oui. Une protection solaire SPF 50 chaque matin est essentielle, surtout pour les taches et l’uniformité du teint. Réappliquez selon les indications du fabricant."
+  utter_q26:
+    - text: "Faites mousser le savon dans vos mains propres, puis appliquez délicatement la mousse sur le visage. Évitez de frotter directement la barre sur la peau."
+  utter_q27:
+    - text: "Suivez d’abord l’étiquette. En général, commencez doucement et observez votre peau. Si elle devient sèche ou irritée, réduisez la fréquence et contactez l’équipe."
+  utter_q28:
+    - text: "Utilisez le savon sous la douche, puis le lait sur peau propre. L’huile peut être appliquée ensuite pour aider à retenir l’hydratation. Suivez les indications de chaque produit."
+  utter_q29:
+    - text: "Pour limiter le risque d’irritation, évitez de superposer plusieurs actifs puissants sans conseil professionnel. Envoyez les noms ou photos des produits déjà utilisés."
+  utter_q30:
+    - text: "Demandez d’abord l’avis de votre dermatologue ou pharmacien. Ne combinez pas un traitement prescrit avec de nouveaux produits actifs sans leur accord."
+  utter_q31:
+    - text: "Avant utilisation, faites vérifier la liste complète des ingrédients par votre médecin ou pharmacien. L’assistant ne peut pas confirmer la sécurité pendant la grossesse ou l’allaitement."
+  utter_q32:
+    - text: "Chaque peau avance à son rythme. La patience, la régularité et la protection solaire sont essentielles; aucun délai précis ne peut être garanti."
+  utter_q33:
+    - text: "Nous comprenons votre déception 🤍 Vérifiez que la routine est utilisée correctement et régulièrement, avec un SPF 50 le matin. Envoyez une photo avant/après sans filtre et la liste des autres produits utilisés."
+  utter_q34:
+    - text: "Une peau peut réagir à une nouvelle routine, mais toute poussée n’est pas automatiquement une purge. Si les boutons sont nombreux, douloureux, brûlants, gonflés ou très irritants, arrêtez le produit et consultez un professionnel."
+  utter_q35:
+    - text: "Arrêtez immédiatement, rincez doucement et n’ajoutez aucun autre actif. En cas d’enflure importante, de difficulté à respirer ou de réaction sévère, obtenez des soins urgents. Pour une irritation persistante, consultez un professionnel et contactez-nous avec des photos."
+  utter_q36:
+    - text: "Oui. Testez sur une petite zone et attendez 24 à 48 heures avant une utilisation plus large. N’utilisez pas le produit si une réaction importante apparaît."
+  utter_q37:
+    - text: "Non. Les témoignages reflètent l’expérience de certaines clientes, mais chaque peau est différente. Aucun résultat identique ni délai précis ne peut être garanti."
+  utter_q38:
+    - text: "Nos produits sont des soins cosmétiques et ne remplacent pas un diagnostic ou traitement médical. Pour une affection persistante, douloureuse ou sévère, consultez un dermatologue."
+  utter_q39:
+    - text: "Oui. Envoyez une photo nette, sans filtre, en lumière naturelle, avec votre objectif, type de peau, produits utilisés et sensibilités connues. Une photo ne remplace pas un diagnostic médical."
+  utter_q40:
+    - text: "Non. N’appliquez pas de produit sur une plaie, une peau fortement irritée ou une zone infectée. Attendez la guérison ou demandez conseil à un professionnel."
+  utter_q41:
+    - text: "Ajoutez les produits au panier sur pepites-zone2.com, entrez votre adresse, choisissez la livraison et effectuez le paiement. Vérifiez tout avant de confirmer."
+  utter_q42:
+    - text: "La disponibilité de la fiche produit est la référence la plus récente. En précommande, l’expédition suit le délai annoncé."
+  utter_q43:
+    - text: "Votre commande est en cours de préparation. Elle n’a pas encore quitté nos locaux."
+  utter_q44:
+    - text: "Votre commande a quitté nos locaux. Le suivi peut prendre un certain temps avant son premier balayage."
+  utter_q45:
+    - text: "Connectez-vous au site et ouvrez « Mes commandes ». Vous pouvez aussi consulter le courriel de confirmation ou d’expédition."
+  utter_q46:
+    - text: "Vérifiez les indésirables et que le paiement est finalisé. Sinon, envoyez votre nom complet, l’adresse courriel utilisée, la date et le montant du paiement."
+  utter_q47:
+    - text: "Contactez immédiatement ca@pepites-zone2.com avec votre numéro de commande et la modification demandée. Une commande préparée ou expédiée ne peut pas toujours être modifiée ou annulée."
+  utter_q48:
+    - text: "Écrivez-nous rapidement avec votre numéro de commande. Si la préparation n’est pas terminée, l’équipe indiquera si l’ajout est possible et comment régler la différence."
+  utter_q49:
+    - text: "À titre indicatif : Montréal environ 2 à 3 jours ouvrables; ailleurs au Canada environ 4 à 5 jours. Le délai standard généralement annoncé est de 3 à 4 jours après préparation. Il peut varier selon le transporteur, la destination, la météo et l’achalandage."
+  utter_q50:
+    - text: "Une option express UPS d’environ 1 à 2 jours ouvrables peut être offerte pour les commandes admissibles avant 18 h. Vérifiez au paiement; la préparation peut s’ajouter."
+  utter_q51:
+    - text: "Les commandes peuvent être livrées par Canada Post, UPS ou Pépite-Zone. À Montréal, Laval et Longueuil, un livreur local peut être utilisé."
+  utter_q52:
+    - text: "Un suivi gris correspond généralement à Canada Post. Cliquez sur le numéro ou copiez-le sur le site du transporteur."
+  utter_q53:
+    - text: "Après l’expédition, le transporteur peut prendre du temps avant le premier balayage. Si le suivi reste inchangé au-delà du délai prévu, contactez le transporteur puis écrivez-nous avec votre numéro de commande."
+  utter_q54:
+    - text: "Vérifiez l’entrée, la boîte aux lettres, la réception, votre foyer et vos voisins. Contactez ensuite le transporteur pour une enquête, puis transmettez-nous le numéro de commande et du dossier transporteur."
+  utter_q55:
+    - text: "Après remise au transporteur, ses mises à jour sont les plus précises. Consultez le lien de suivi et contactez-le en cas de retard ou d’incident."
+  utter_q56:
+    - text: "Écrivez immédiatement à ca@pepites-zone2.com avec votre numéro de commande, l’ancienne adresse et l’adresse corrigée. Une correction avant expédition sera tentée, sans garantie après expédition."
+  utter_q57:
+    - text: "Si l’erreur vient de Pépite-Zone, nous prenons la correction en charge. Si l’adresse client est incorrecte ou incomplète et le colis revient, des frais de réexpédition peuvent s’appliquer."
+  utter_q58:
+    - text: "Envoyez votre numéro de commande et confirmez votre adresse complète. Après réception et vérification du retour, l’équipe indiquera les options. Des frais peuvent s’appliquer si l’adresse était incorrecte ou incomplète."
+  utter_q59:
+    - text: "Contactez rapidement ca@pepites-zone2.com avec votre numéro de commande et des photos du colis, de l’étiquette, de tous les articles reçus et du produit endommagé."
+  utter_q60:
+    - text: "La livraison dépend du transporteur et du secteur. Consultez le suivi; Pépite-Zone ne peut pas garantir une livraison de fin de semaine."
+  utter_q61:
+    - text: "Les moyens disponibles s’affichent au paiement sur le site. Choisissez l’option souhaitée et suivez les étapes sécurisées."
+  utter_q62:
+    - text: "Un paiement en attente n’est pas confirmé comme réussi. Attendez sa mise à jour et évitez de payer plusieurs fois. Si le statut persiste, contactez la banque ou le fournisseur et envoyez une capture sans données sensibles."
+  utter_q63:
+    - text: "Vérifiez l’adresse de facturation, les fonds et les informations de carte, puis contactez votre banque. Ne transmettez jamais le numéro complet de carte, le code de sécurité ou le mot de passe."
+  utter_q64:
+    - text: "Envoyez votre nom, numéro de commande, date, deux montants et une capture masquée. Vérifiez si l’une des opérations est seulement une autorisation temporaire."
+  utter_q65:
+    - text: "Certains paiements prennent du temps à être confirmés ou libérés. Attendez le délai indiqué par la banque ou le fournisseur, puis contactez-le si le statut persiste."
+  utter_q66:
+    - text: "Oui, des options de gros peuvent être offertes. Indiquez votre pays, les produits et la quantité approximative; l’équipe transmettra les prix et conditions."
+  utter_q67:
+    - text: "La revente peut être autorisée hors Québec et à l’étranger, sous réserve de validation. Envoyez votre pays, votre ville et votre projet."
+  utter_q68:
+    - text: "Certaines options peuvent permettre le logo Pépite-Zone ou votre propre marque. L’équipe doit confirmer conditions, quantités minimales, emballages et délais."
+  utter_q69:
+    - text: "Merci pour votre intérêt. Envoyez votre nom, réseaux sociaux, pays, audience, statistiques, média kit, contenu proposé et tarifs. L’équipe évaluera la proposition."
+  utter_q70:
+    - text: "Pour des raisons d’hygiène, n’expédiez rien sans autorisation. Envoyez numéro de commande, état et motif à ca@pepites-zone2.com; l’équipe confirmera l’admissibilité et les étapes."
+  utter_q71:
+    - text: "Les résultats varient et ne sont pas garantis. Une absence de résultat ne donne pas automatiquement droit à un remboursement. Contactez l’équipe pour vérifier la routine et les conditions applicables."
+  utter_q72:
+    - text: "Après approbation, le remboursement revient au moyen de paiement initial. Le délai d’affichage dépend de la banque ou du fournisseur."
+  utter_q73:
+    - text: "Vous pouvez nous contacter sur pepites-zone2.com ou écrire au service client à ca@pepites-zone2.com. Pour une commande, indiquez votre nom complet, votre numéro de commande et un résumé clair de votre demande. Ne transmettez jamais de numéro complet de carte, de code de sécurité ou de mot de passe."
+  utter_q74:
+    - text: "Envoyez votre nom complet, numéro de commande, adresse courriel utilisée, description claire et photos utiles. Ne transmettez jamais de numéro complet de carte, code de sécurité ou mot de passe."
+  utter_transfer:
+    - text: "Merci pour ces informations 🤍 Votre demande nécessite une vérification par notre équipe. Veuillez laisser votre nom complet, votre numéro de commande s’il y en a un, ainsi qu’un résumé du problème. Un membre de Pépite-Zone prendra le relais."
+  utter_free_chitchat_response:
+    - text: "Je peux vous aider avec les produits Pépite-Zone, votre routine, une commande, la livraison, le paiement ou le service client. Que souhaitez-vous savoir ?"
