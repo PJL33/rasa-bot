@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY . .
 
-CMD ["rasa run --enable-api --host 0.0.0.0 --port ${PORT:-5005}"]
+CMD ["run", "--enable-api", "--host", "0.0.0.0", "--port", "5005"]
