@@ -47,3 +47,6 @@ model_groups:
       - provider: rasa
         model: rasa/command-generator-llama-3.1-8b-instruct
         api_base: "https://tutorial-llm.rasa.ai"
+
+nlg:
+  type: rephrase
