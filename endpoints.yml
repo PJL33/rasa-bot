@@ -41,6 +41,9 @@ action_endpoint:
 #  password: password
 #  queue: queue
 
+nlg:
+  type: rephrase
+
 model_groups:
   - id: rasa_command_generation_model
     models:
