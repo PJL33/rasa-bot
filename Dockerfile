@@ -5,4 +5,5 @@ WORKDIR /app
 COPY . .
 
 ENTRYPOINT []
-CMD ["rasa", "run", "--enable-api", "--host", "0.0.0.0", "--port", "5005"]
+
+CMD ["rasa", "run", "--enable-api", "-i", "0.0.0.0", "-p", "5005"]
