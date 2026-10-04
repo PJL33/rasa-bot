@@ -1,0 +1,371 @@
+flows:
+  q01:
+    description: "Answer a greeting or opening message in French or English: bonjour, bonsoir, salut, hello, hi, coucou, bonne journée. Welcome the customer and ask how Pépite-Zone can help. Do not use this flow for a request that also contains a product, order, delivery, payment or contact question."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q01
+  q02:
+    description: "Answer what Pépite-Zone sells or offers. Match: quels produits vendez-vous, vous vendez quoi, votre boutique propose quoi, quels soins avez-vous, produits disponibles, what do you sell. Mention face and body care, Glowelle and Melanight ranges, other skincare, perfumes, accessories and kits. Direct the customer to pepites-zone2.com for current products and prices."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q02
+  q03:
+    description: "PRIORITY FLOW for a general skin type or complexion statement/question. Start this flow for short messages such as: mon teint est pale, mon teint est pâle, teint pale, peau pale, ma peau est claire, peau claire, peau noire, peau métissée, peau foncée, peau brune, peau sensible, quel type de peau, pour quelle peau, est-ce adapté à ma peau, est-ce pour moi, pale complexion, light skin tone. A statement about complexion alone belongs here even without a question mark. Say that products are designed especially for Black and mixed-race skin; some suit all skin types, and the choice depends on goal and sensitivity. Do not diagnose or recommend medical treatment. Use q14 only when the customer asks for a product against spots; use q13 only when they explicitly do not want a lightening effect."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q03
+  q04:
+    description: "Help choose a cosmetic product or routine when the customer asks generally what to choose. Match: quel produit choisir, conseillez-moi, je ne sais pas quoi prendre, quelle routine, besoin de conseils, taches, boutons, teint terne, teint irrégulier, sécheresse, soin du corps. Ask for the main goal, sensitivity and products already used. This is general product orientation, not a diagnosis. Use q14 when the customer specifically asks for a product against brown or dark spots; use q13 when they explicitly do not want a lightening effect."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q04
+  q05:
+    description: "Handle a request to speak with a human, person, advisor or team: je veux parler à quelqu'un, une vraie personne, un humain, une conseillère, service client, agent, can I speak to someone. Ask for the full name, order number if relevant and a short summary so the Pépite-Zone team can take over. This is not the general request for the store email; use q73 for contact details."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q05
+  q06:
+    description: "Answer where Pépite-Zone ships. Match: dans quels pays livrez-vous, livrez-vous au Canada, aux États-Unis, en Haïti, en France, est-ce que vous expédiez chez moi, do you ship to my country. State Canada, United States, Haiti and France, and ask for another country so the team can confirm availability. Do not invent other destinations."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q06
+  q07:
+    description: "Explain what the Glowelle Kit is and what it contains. Match: c'est quoi le Kit Glowelle, contenu du kit Glowelle, produits du kit, Glowelle set. State exactly: face soap, Glowelle lotion and Glowelle face moisturizer. Do not add products or ingredients."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q07
+  q08:
+    description: "Explain the cosmetic purpose of Glowelle. Match: à quoi sert Glowelle, Glowelle fait quoi, effet Glowelle, Glowelle pour les taches, éclat, teint uniforme. Say it helps revive radiance and improve the appearance of spots and uneven tone; results vary with skin, consistency and sun protection. Do not promise a result or medical treatment."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q08
+  q09:
+    description: "Explain the complete Glowelle range. Match: gamme Glowelle complète, kit complet, les six produits Glowelle, tout Glowelle. State exactly that it contains six care products: three face products and three body products, including the face routine plus body soap, body lotion and body oil."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q09
+  q10:
+    description: "Explain the Glowelle body range. Match: gamme corps, produits corps Glowelle, savon corps, lait corps, huile corps. State that it contains body soap, body lotion and body oil, designed to cleanse, nourish and support a brighter, more even-looking appearance."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q10
+  q11:
+    description: "Explain the Melanight Kit. Match: c'est quoi Melanight, kit Melanight, Melanight pour qui, soin Melanight. State that it is designed for dark skin or people seeking to improve the appearance of spots and blemishes while evening and illuminating their natural complexion, without seeking a lightening effect."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q11
+  q12:
+    description: "Compare Glowelle and Melanight. Match: différence Glowelle Melanight, lequel choisir entre Glowelle et Melanight, Glowelle ou Melanight. Explain that Glowelle focuses mainly on radiance, spots and uneven tone, while Melanight respects the natural complexion for customers who do not want to lighten it. Ask for goal and skin type if undecided."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q12
+  q13:
+    description: "Recommend the product direction for a customer who does not want to lighten their complexion. Match: je ne veux pas éclaircir, sans dépigmenter, garder mon teint naturel, produit non éclaircissant, respecter ma couleur. Recommend looking at the Melanight Kit, designed to even and illuminate the natural complexion without a lightening objective."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q13
+  q14:
+    description: "Answer a specific request for a product against dark spots or brown spots. Match: j'ai des taches, j'ai des taches brunes, comment enlever mes taches brunes, produit anti-taches, quelle crème pour mes taches, hyperpigmentation or dark spots. Mention Glowelle, Melanight or the anti-spot cream according to complexion, sensitivity and existing routine; request a clear unfiltered natural-light photo for more precise orientation. Do not promise treatment or guaranteed results."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q14
+  q15:
+    description: "Explain what the Glowelle lotion does and when to use it. Match: lotion Glowelle fait quoi, à quoi sert la lotion, lotion pour taches, quand mettre la lotion. State that it is for the evening routine and helps revive radiance and progressively improve the appearance of uneven tone and spots. Do not recommend morning use; use q24 for that question."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q15
+  q16:
+    description: "Explain the Glowelle face cream. Match: crème Glowelle fait quoi, à quoi sert la crème visage, crème hydratante Glowelle. State that it moisturizes the skin and completes the face routine after cleansing and the evening lotion."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q16
+  q17:
+    description: "Answer whether the Pépite-Zone soap is a turmeric soap or contains turmeric. Match: savon curcuma, savon au curcuma, y a-t-il du curcuma, turmeric soap. Say no and do not present it as turmeric soap; direct the customer to the product page or label photo for exact ingredients."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q17
+  q18:
+    description: "Answer whether products can be bought separately. Match: vendre à l'unité, produits séparés, hors kit, acheter seulement la lotion, can I buy one product. Say several products may be available separately depending on stock and direct to the shop for current formats, prices and availability."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q18
+  q19:
+    description: "Answer the current price of the Glowelle Kit or Melanight Kit. Match: prix Kit Glowelle, combien coûte Glowelle, prix Kit Melanight, tarif du kit. State 75 CAD each, while clearly saying the cart price at checkout is authoritative and prices can change. Never invent another currency or discount."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q19
+  q20:
+    description: "Answer the current price of the Glowelle lotion or face cream. Match: prix lotion, combien coûte la lotion, prix crème Glowelle, tarif crème visage. State 50 CAD for the lotion and 20 CAD for the face cream, with the cart price at checkout as the authority."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q20
+  q21:
+    description: "Answer the current price of the Glowelle body range or complete range. Match: prix gamme corps, prix gamme complète, combien coûtent les six produits. State 105.50 CAD for the body range and 155.10 CAD for the complete range, with the cart price at checkout as the authority."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q21
+  q22:
+    description: "Explain the Glowelle morning routine. Match: routine matin, comment utiliser Glowelle le matin, ordre des produits le matin, que mettre au réveil. Say exactly: cleanse gently with the face soap, apply face moisturizer, then SPF 50. Explicitly say not to use Glowelle lotion in the morning."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q22
+  q23:
+    description: "Explain the Glowelle evening routine. Match: routine soir, comment utiliser Glowelle le soir, ordre du soir, quand mettre la lotion. Say exactly: cleanse with soap, dry without rubbing, apply Glowelle lotion, then moisturizer; avoid the eye contour and follow the label."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q23
+  q24:
+    description: "Answer whether Glowelle lotion can be used in the morning. Match: lotion le matin, mettre la lotion au réveil, lotion matin ou soir, puis-je utiliser Glowelle le jour. Answer no: lotion is reserved for evening; in the morning moisturize and use SPF 50."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q24
+  q25:
+    description: "Answer questions about sunscreen. Match: crème solaire, SPF, protection solaire, faut-il mettre un écran, quelle protection pour les taches. Say SPF 50 every morning is essential, especially for spots and even tone, and reapply according to the manufacturer's directions."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q25
+  q26:
+    description: "Explain how to use the face soap. Match: savon directement sur le visage, frotter la barre, faire mousser, comment appliquer le savon visage. Say to lather it in clean hands and apply the foam gently; do not rub the bar directly on the skin."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q26
+  q27:
+    description: "Answer how often to use the soap. Match: combien de fois, fréquence du savon, savon matin soir, tous les jours. Tell the customer to follow the label, start gently and observe the skin; reduce frequency if dryness or irritation appears. Do not invent a fixed frequency."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q27
+  q28:
+    description: "Explain how to use the Glowelle body range. Match: routine corps, comment utiliser le savon corps, lait corps et huile corps, ordre des produits corps. Say use soap in the shower, body lotion on clean skin, then oil to help retain moisture; follow each label."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q28
+  q29:
+    description: "Answer whether Pépite-Zone products can be mixed with another brand or active ingredients. Match: mélanger avec autre marque, combiner avec acide, rétinol, traitement, autres produits. Warn against layering several strong actives without professional advice and ask for names or photos of existing products."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q29
+  q30:
+    description: "Handle use during dermatological treatment. Match: traitement dermatologique, ordonnance, médicament, dermatologue, antibiotiques, traitement de peau, puis-je combiner. Tell the customer to ask their dermatologist or pharmacist first and not combine prescribed treatment with new actives without approval. This requires human or health-professional follow-up."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q30
+  q31:
+    description: "Handle pregnancy, trying to conceive, breastfeeding or use around a baby. Match: enceinte, grossesse, allaitement, j'allaite, femme enceinte, sécuritaire pendant la grossesse, safe while breastfeeding. Never confirm safety; tell the customer to have the complete ingredient list checked by a doctor or pharmacist and route to the team."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q31
+  q32:
+    description: "Answer when cosmetic results may appear. Match: délai des résultats, quand voir un effet, en combien de temps, combien de semaines, résultats rapides. Explain that every skin progresses differently; patience, consistency and sunscreen matter, and no exact delay can be guaranteed."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q32
+  q33:
+    description: "Handle finishing a box without the desired result. Match: aucune amélioration, pas de résultat, boîte finie, produit inefficace, ça ne marche pas, déçue. Acknowledge the disappointment, ask them to check correct consistent routine and SPF 50, and request an unfiltered before/after photo and list of other products for team guidance. Do not promise a refund or result."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q33
+  q34:
+    description: "Handle small pimples after starting a routine. Match: boutons au début, poussée, purge, réaction initiale, ça ressort. Do not automatically call it purging. If numerous, painful, burning, swollen or very itchy, advise stopping the product and seeing a health professional."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q34
+  q35:
+    description: "Handle burning, severe irritation, swelling, intense itching or allergic reaction. Match: ma peau brûle, réaction, visage gonflé, démangeaisons fortes, rougeur sévère, difficulté à respirer. Advise stopping immediately, rinsing gently and adding no active. For major swelling, breathing difficulty or severe reaction, seek urgent care; persistent irritation requires a health professional and team follow-up."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q35
+  q36:
+    description: "Answer whether to patch-test a product. Match: test avant utilisation, test cutané, petite zone, réaction au produit, patch test. Recommend a small skin-area test and waiting 24 to 48 hours before wider use; do not use if a significant reaction appears."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q36
+  q37:
+    description: "Answer whether results are guaranteed. Match: résultat garanti, garantie, promesse, est-ce que ça marche à coup sûr, remboursement garanti. Say no: testimonials are personal experiences, each skin differs, and neither identical results nor an exact timeframe can be guaranteed."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q37
+  q38:
+    description: "Handle medical or diagnostic questions about skin. Match: maladie de peau, acné, eczéma, infection, traiter, guérir, diagnostic, problème médical, dermatose. Explain that products are cosmetics and do not replace diagnosis or medical treatment; persistent, painful or severe conditions require a dermatologist."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q38
+  q39:
+    description: "Answer whether the customer can send a skin photo for product orientation. Match: envoyer une photo, photo de ma peau, regarder ma peau, analyse en photo, conseiller avec image. Accept a clear unfiltered natural-light photo and ask for goal, skin type, existing products and known sensitivity, while stating that a photo is not a medical diagnosis."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q39
+  q40:
+    description: "Handle use on damaged skin. Match: plaie, peau blessée, coupure, infection, zone infectée, peau très irritée, puis-je appliquer sur une blessure. Say no; do not apply on a wound, strongly irritated skin or infected area. Wait for healing or ask a health professional."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q40
+  q41:
+    description: "Explain how to place an order. Match: comment commander, acheter, passer commande, faire un achat, utiliser le panier, checkout, order online. Tell the customer to add products on pepites-zone2.com, enter the complete address, choose delivery, pay and check all information before confirming."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q41
+  q42:
+    description: "Answer current stock and availability questions. Match: en stock, disponible, rupture, épuisé, quand revient le produit, précommande, out of stock, available. Say the product page is the latest reference; if marked preorder, shipping follows the announced preorder delay. Never invent stock."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q42
+  q43:
+    description: "Explain the order status en préparation or being prepared. Match: commande en préparation, preparing, préparation, pas encore expédiée. Say the order is being prepared and has not left the premises yet."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q43
+  q44:
+    description: "Explain the order status expédiée or shipped. Match: commande expédiée, colis parti, shipped, envoyé, est-ce que ma commande est partie. Say it has left the premises and tracking may take time before its first scan."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q44
+  q45:
+    description: "Explain where to see an order status. Match: où voir ma commande, statut commande, mes commandes, vérifier ma commande, tracking in account. Tell the customer to sign in, open Mes commandes, and also check confirmation or shipping email. Do not claim access to a specific order."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q45
+  q46:
+    description: "Handle missing order confirmation. Match: pas reçu confirmation, aucun email, courriel de commande absent, confirmation jamais arrivée, no order email. Ask them to check spam and confirm payment completion; if still missing, request full name, email used, payment date and amount. Never request card number or security code."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q46
+  q47:
+    description: "Handle changing or cancelling an order. Match: modifier commande, changer adresse ou produit, annuler commande, cancel order, erreur dans ma commande. Tell the customer to contact ca@pepites-zone2.com immediately with order number and requested change; a prepared or shipped order may not be changeable."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q47
+  q48:
+    description: "Handle adding a forgotten product to an existing order. Match: j'ai oublié un article, ajouter produit, compléter commande, add an item. Ask for the order number and say the team will confirm whether preparation is complete and how to pay any difference."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q48
+  q49:
+    description: "Answer Canadian delivery times. Match: délai livraison Canada, combien de temps Montréal, Québec, autre province, quand recevoir ma commande, shipping time Canada. Give only the guide's indicative times: Montréal about 2-3 business days, elsewhere Canada about 4-5, standard generally 3-4 after preparation. Mention carrier, destination, weather and busy periods can change this; never guarantee a date."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q49
+  q50:
+    description: "Answer express delivery questions. Match: livraison express, UPS express, rapide, recevoir demain, commande avant 18h. Say an approximately 1-2 business-day UPS express option may be available for eligible orders before 18:00; check checkout and add preparation time. Do not guarantee eligibility or delivery."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q50
+  q51:
+    description: "Answer which carrier delivers an order. Match: quel transporteur, qui livre, Canada Post, Poste Canada, UPS, livreur local, carrier, delivery company. State that Canada Post, UPS or a Pépite-Zone delivery service may be used depending on destination and option; Montréal, Laval and Longueuil may use a local driver."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q51
+  q52:
+    description: "Explain a grey tracking number. Match: suivi gris, numéro gris, tracking grey, couleur grise du suivi. Say it generally corresponds to Canada Post and advise clicking or copying the number on the carrier website."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q52
+  q53:
+    description: "Handle tracking that has not moved. Match: suivi bloqué, tracking ne bouge pas, aucune mise à jour, pas de scan, colis stuck. Explain that the carrier may need time for its first scan; if unchanged beyond the expected period, contact the carrier then Pépite-Zone with order number. Do not invent the parcel location."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q53
+  q54:
+    description: "Handle a parcel marked delivered but not received. Match: livré mais rien reçu, colis absent, livraison manquante, package says delivered, colis perdu. Tell the customer to check entrance, mailbox, reception, household and neighbours, then contact the carrier to open an investigation and provide order and case numbers to the team. Escalate this case."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q54
+  q55:
+    description: "Answer where an shipped parcel is or how to locate it. Match: où est mon colis, localiser colis, position commande, track my package, commande expédiée où est-elle. Say the carrier tracking is most accurate after handoff; check the link and contact the carrier for delay or incident. Do not claim live tracking access."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q55
+  q56:
+    description: "Handle a wrong delivery address. Match: mauvaise adresse, erreur adresse, adresse incorrecte, changer adresse, wrong address. Ask the customer to email ca@pepites-zone2.com immediately with order number, old address and complete corrected address; correction before shipment will be attempted but is not guaranteed after shipment."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q56
+  q57:
+    description: "Answer who pays when a delivery address is incorrect. Match: frais mauvaise adresse, qui paie réexpédition, adresse incomplète, delivery returned because address wrong. Explain that Pépite-Zone covers errors from the company; customer address errors or incomplete addresses can lead to reshipping fees if parcel returns."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q57
+  q58:
+    description: "Handle a parcel returned to sender. Match: retourné à l'expéditeur, colis retour, returned to sender, adresse invalide. Request order number and full address; after receipt and verification, the team explains options. Reshipping fees may apply when the supplied address was wrong or incomplete. Escalate."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q58
+  q59:
+    description: "Handle a damaged product or missing item. Match: article manquant, produit cassé, colis endommagé, mauvais article, damaged package, missing item. Direct the customer quickly to ca@pepites-zone2.com with order number and photos of parcel, shipping label, all received items and damaged product. Escalate; do not promise a replacement or refund."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q59
+  q60:
+    description: "Answer weekend delivery questions. Match: livrez-vous samedi, dimanche, fin de semaine, weekend delivery. Say it depends on carrier and area; check tracking and do not guarantee weekend delivery."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q60
+  q61:
+    description: "Answer which payment methods are accepted. Match: moyens de paiement, comment payer, carte, paiement disponible, payment methods, can I pay by. Say the available methods appear at checkout and the customer should follow the secure steps. Do not invent a method."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q61
+  q62:
+    description: "Handle a payment pending status. Match: paiement en attente, pending, commande confirmée, paiement pas finalisé, transaction en attente. Explain that pending is not confirmed successful; wait for update and do not pay twice. If it persists, contact bank or payment provider and send only a screenshot with sensitive data hidden."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q62
+  q63:
+    description: "Handle a declined payment. Match: paiement refusé, carte refusée, transaction rejetée, paiement impossible, card declined. Suggest checking billing address, funds and card details or contacting the bank. Never ask for or accept full card number, security code or password."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q63
+  q64:
+    description: "Handle a duplicate charge. Match: débité deux fois, double paiement, double prélèvement, charged twice, duplicate transaction. Request name, order number, date, both amounts and a redacted screenshot; explain one operation may be a temporary authorization. Escalate without asking for banking secrets."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q64
+  q65:
+    description: "Handle Klarna or bank still showing a payment as pending. Match: Klarna en attente, banque paiement pending, paiement Klarna bloqué, provider pending. Explain that confirmation or release can take time; wait for the provider's stated period and contact that provider if it persists. Escalate status inconsistencies."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q65
+  q66:
+    description: "Handle wholesale requests. Match: vente en gros, prix de gros, grossiste, acheter en quantité, wholesale, bulk order. Ask country, desired products and approximate quantity; the team provides current prices and conditions. Do not invent wholesale prices or minimums. Escalate to the commercial team."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q66
+  q67:
+    description: "Handle reseller or distributor requests. Match: revendre, devenir revendeur, distributeur, reseller, distributor, vendre vos produits. Explain resale may be authorized outside Quebec and abroad subject to Pépite-Zone validation; ask country, city and resale project. Escalate."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q67
+  q68:
+    description: "Handle private-label or own-brand requests. Match: ma propre marque, private label, mettre mon logo, personnaliser, vendre sous mon nom, custom packaging. Say options may exist for Pépite-Zone or the customer's own brand, but the team must confirm conditions, minimum quantities, packaging and timelines. Never promise an agreement. Escalate."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q68
+  q69:
+    description: "Handle collaboration, influencer and partnership proposals. Match: collaboration, partenariat, influenceuse, ambassadeur, contenu sponsorisé, média kit, brand deal. Ask for name, social networks, country, audience, recent statistics, media kit, proposed content and rates; the team evaluates the proposal. Escalate."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q69
+  q70:
+    description: "Handle a return request because a product does not suit the customer. Match: retourner produit, faire un retour, return item, produit ne me convient pas, échange. Warn not to ship anything without prior authorization for hygiene reasons; request order number, product condition and reason at ca@pepites-zone2.com. The team confirms eligibility and steps. Never promise approval."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q70
+  q71:
+    description: "Handle a refund request because the desired cosmetic result was not obtained. Match: rembourser, remboursement car pas de résultat, produit inefficace, money back, refund for no effect. Explain results vary and are not guaranteed; lack of result does not automatically qualify for refund. The team checks routine and order conditions. Escalate every refund request."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q71
+  q72:
+    description: "Answer how long an approved refund takes. Match: délai remboursement, quand vais-je être remboursée, refund pending, argent retourné. Say approved refunds go to the original payment method and display time depends on the bank or payment provider. Do not promise a number of days. Escalate refund status."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q72
+  q73:
+    description: "HIGHEST PRIORITY CONTACT DETAILS FLOW. Always start this flow for a short request asking for Pépite-Zone contact information, even without a question mark. Exact examples: c'est quoi votre email, c est quoi votre email, email, e-mail, adresse email, votre adresse mail, courriel, adresse électronique, quelle est votre adresse, comment je peux vous contacter, comment vous joindre, vos coordonnées, contact, service client, SAV, customer service, contact us, how can I reach you. Provide only the official details: website pepites-zone2.com and customer service email ca@pepites-zone2.com. Never invent a phone number, other email, social account or address. If the message also describes a specific order problem, ask for full name, order number and summary; otherwise do not ask for extra personal information and do not use q74."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q73
+  q74:
+    description: "Explain what information to send to customer service. Match: quelles informations envoyer, que dois-je fournir, infos SAV, documents, détails commande, quelles photos. Request full name, order number, email used, clear problem description and useful photos. Explicitly prohibit full card number, security code and password. This is the information checklist, not a request for an email address; use q73 for contact details."
+    run_pattern_completed: false
+    steps:
+      - action: utter_q74
